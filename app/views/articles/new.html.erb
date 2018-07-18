@@ -6,7 +6,7 @@
   The following errors preventing the article
 </h2>
 <ul>
-<% @article.errors.full_messages do |msg| %>
+<% @article.errors.full_messages.each do |msg| %>
 <li><%= msg %></li>
 <% end %>
 </ul>
